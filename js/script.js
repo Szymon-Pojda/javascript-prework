@@ -41,6 +41,9 @@ function displayResult(argComputerMove, argPlayerMove){
     else if( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce' ){
         printMessage('REMIS');
     }
+    else {
+        printMessage('Nieznany ruch')
+    }
     console.log('moves:', argComputerMove, argPlayerMove);
 }
 
@@ -50,7 +53,7 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 
 let computerMove = getMoveName(randomNumber);
 
- displayResult();
+ displayResult()
  console.log(getMoveName('2'));
  console.log();
  
