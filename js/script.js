@@ -1,7 +1,8 @@
-function playGame(){
+{
+const playGame = function(playerInput){
     clearMessages();
     
-    function getMoveName(argMoveId){
+    const getMoveName = function(argMoveId){
         if(argMoveId == 1){
         return 'kamień';
         }
@@ -16,7 +17,7 @@ function playGame(){
     }
     
     function displayResult(argComputerMove, argPlayerMove){
-        console.log(argComputerMove);
+        /*console.log(argComputerMove);*/
         if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
             printMessage('Ty wygrywasz!');
         }
@@ -45,12 +46,12 @@ function playGame(){
             printMessage('REMIS');
         }
         
-        console.log('moves:', argComputerMove, argPlayerMove);
+        /*console.log('moves:', argComputerMove, argPlayerMove);*/
     }
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    console.log('Wylosowana liczba to: ' + randomNumber);
+    /*console.log('Wylosowana liczba to: ' + randomNumber);*/
 
     let computerMove = getMoveName(randomNumber);
 
@@ -127,3 +128,4 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
     playGame('3');
   });  
+}
