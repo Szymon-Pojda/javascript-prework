@@ -16,7 +16,7 @@ const playGame = function(playerInput){
         return 'nieznany ruch';*/
     }
     
-    function displayResult(argComputerMove, argPlayerMove){
+    const displayResult = function(argComputerMove, argPlayerMove){
         /*console.log(argComputerMove);*/
         if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
             printMessage('Ty wygrywasz!');
