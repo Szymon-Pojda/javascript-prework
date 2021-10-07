@@ -19,7 +19,6 @@ const playGame = function(playerInput){
     }
     
     const displayResult = function (argComputerMove, argPlayerMove){
-        console.log('moves:', argComputerMove, argPlayerMove);
         if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
             printMessage('Ty wygrywasz!');
         }
@@ -79,7 +78,7 @@ const playGame = function(playerInput){
     /*console.log('komputer wpisał:' + computerMove);
     console.log('Gracz wpisał: ' + playerInput);*/
 
-    let playerMove = getMoveName(randomNumber);
+    let playerMove = getMoveName(playerInput);
 
     /*if(playerInput == '1'){
     playerMove = 'kamień';
@@ -91,7 +90,7 @@ const playGame = function(playerInput){
         playerMove = 'nożyce';
     }*/
     printMessage('Twój ruch to: ' + playerMove);
-
+    console.log;
     displayResult(computerMove, playerMove);
     /*if( computerMove == 'kamień' && playerMove == 'papier'){
         printMessage('Ty wygrywasz!');
